@@ -1,0 +1,103 @@
+header h1 {
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  font-size: 5em;
+  text-shadow: 2px 2px 8px white;
+  padding-left: 10px;
+  color: #FF5743;
+  margin-top: 400px;
+}
+nav {
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .85);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  display: inline-flex;
+}
+nav li {
+  list-style-type: none;
+}
+nav a{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: rgba(255, 87, 67, .45);
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+header h3 {
+  text-align: center;
+  margin-top: -90px;
+  margin-bottom: 80px;
+  font-size: 2em;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #98B238;
+  background-image: url(images/spiral.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section h1{
+  font-family: 'Rock Salt', cursive;
+}
+.green-background{
+  background-color: rgba(151, 178, 56, .75);
+}
+.white-background{
+  background-color: rgba(255, 255, 255, .75);
+}
+.coral-background{
+  background-color: rgba(255, 97, 67, .75);
+}
+.flex-grid {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  padding: 10px auto 0 auto;
+  box-sizing: border-box;
+  flex-basis: auto;
+  justify-content: space-around;
+}
+.large-paragraph-text {
+  font-size: 1.25em;
+  text-align: center;
+  padding: auto 10px;
+}
+h4 {
+  font-family: "Rock Salt", cursive;
+  font-size: 1.25em;
+  padding: auto 10px;
+}
+aside {
+  background-color: rgba(255, 255, 255, .75);
+}
+footer {
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .85);
+  width: 100%;
+}
+footer a{
+  float: left;
+  display: block;
+  justify-content: center;
+  padding: 5px;
+  text-decoration: none;
+}
