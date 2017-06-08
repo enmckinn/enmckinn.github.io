@@ -1,83 +1,193 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <title>Narrow Jumbotron Template for Bootstrap</title>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+      
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Raleway|Rock+Salt');
-</style>
-<script src="https://use.fontawesome.com/04834e7e58.js"></script>
-<link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-<header>
-  <nav>
-  <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Education</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-  <h1>Erin McKinney</h1>
-  <h3>Web/UI Designer and Developer</h3>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+      <script src="https://use.fontawesome.com/04834e7e58.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-</header>
-<div class="flex-grid">
-<section class="white-background" class"col">
-    <!--<h1> About </h1>-->
-    <img src="images/erin.jpg" alt="Erin McKinney Photo" width="200px">
-    </section>
-    <aside class="white-background" class="col">
-      <p class="large-paragraph-text">Hi! I'm Erin, an aspiring web developer living in beautiful
-      coastal North Carolina.  I am an Army Veteran who started out as a Bomb Tech and am now diving head first into the tech industry.
-    I have discovered a passion for UX/UI design and look forward to making webpages beautiful and user-friendly.    </p>
-       </aside>
-     </div>
-   </header>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <!-- Erin Generated CSS-->
+      <link href="style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway|Rock+Salt" rel="stylesheet">
+      <!--Erin Generated Script-->
+      <script type="text/javascript" src="script.js"></script>
+  </head>
 
-<div class="flex-grid">
+  <body>
+      
+<div class="container">
+    
+            <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">Erin McKinney</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!--<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
 
-    <!-- <h1>About my experience and recent work</h1> -->
-    <section class="coral-background" class="col">
-      <h4><a href="#">Projects</a></h4>
-      <p>Are you interested in seeing what I've been up to and some of my ongoing projects?</p>
-    </section>
-    <section class="coral-background" class="col">
-      <h4><a href="#">Education</a></h4>
-    </p>My formal web design and development education.</p>
-    </section>
-    <section class="coral-background" class="col">
-      <h4><a href="#">Contact</a></h4>
-      <p>Let's chat! Contact me here for questions, concerns, suggestions or riddles.</p>
-    </section>
+   <!-- <h3 class="text-muted"> Hi! Welcome! Take a look around!</h3> -->
 
-</div>
+<!--
+      <div class="jumbotron">
+        <h1></h1>
+        <p class="lead"><img src="images/BWPortrait4" alt="Erin Portrait" width="75%" margin="-25px "></p>
+        <p><a class="btn btn-lg btn-custom" href="#" role="button">Sign up today</a></p>
+      </div>
+-->
+<!--Row 1-->
+      <div class="row marketing about">
+        <div class="col-md-4"><img src="images/BWPortrait2.jpg" width="100%"> 
+          </div>
+          
+       <div class="col-md-8">
+        <h2>Hi! I'm Erin.  A web designer that can code a bit.</h2>
+          </div>
+         </div>
+    
+<!--Row 2-->    
+     <div class="row marketing hex-background">
+<div class="col-md-12">
+          <p class="ltblue-background">“The goal of a designer is to listen, observe, understand, sympathize, empathize, synthesize, and glean insights that enable him or her to ‘make the invisible visible." –Hillman Curtis</p>
 
-<footer>
-<a href="https://github.com/enmckinn" target="_blank"> <i class="fa fa-github fa-2x fa-fw" aria-hidden="true"></i></a>
+        </div>
+         
+        </div>
+          
+<!--Row3-->
+         <div class="row marketing ltgray-background">
+        <div class="col-md-2">
+            <h4>About Me</h4><br>
+            <p><a class="btn btn-lg btn-custom" href="#" role="button">Resume</a></p>
 
-<a href="https://medium.com/@enmckinn" target="_blank"><i class="fa fa-medium fa-2x fa-fw" aria-hidden="true"></i></a>
+        </div> 
+             <div class="col-md-10">
+             <p>I am recently jumping into tech and loving every minute of it!  It is a nice change of pace from working as a secretary.  I enjoy the creative and problem solving aspects of web design and development.  My goal is to help make the web look nice but still be functional!</p>
+            <p>My work history has helped shape me into the person I am today, so if you're interested, take a look at my resume. And yes, I was a bomb tech in a previous life!</p></div>
+    </div>
+    <!--Row4-->
+<div class="row marketing stripe deg45">
+    <div class="col-md-12">
+        <h3>Some of my work.</h3> 
+    </div>
+      </div>
+        <div class="row marketing stripe deg45n">
+              <div class="col-md-3 ltblue-background">
+          <p>Rocky Top Concrete Designs</p>
+          <p>Branding/Graphic Design</p>
+               <p><a class="btn btn-lg btn-custom" href="https://www.behance.net/gallery/53583373/Branding-Rocky-Top-Concrete-Designs" role="button" target="_blank">View</a></p>
 
-<a href="http://codepen.io/enmckinn/" target="_blank"><i class="fa fa-codepen fa-2x fa-fw" aria-hidden="true"></i></a>
+        </div>
+         <div class="col-md-3 ltblue-background">
+          <p>Grace's Cloth Diapers</p>
+          <p>Website and ECommerce Maintenance</p>
+               <p><a class="btn btn-lg btn-custom" href="https://www.gracesclothdiapers.com" role="button" target="_blank">View</a></p>
 
-<a href="https://twitter.com/enmckinn" target="_blank"><i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i></a>
+        </div>    
+        <div class="col-md-3 ltblue-background">
+          <p>City Tasting Tours</p>
+          <p>Graphic Design</p>
+               <p><a class="btn btn-lg btn-custom" href="https://www.behance.net/gallery/53584711/City-Tasting-Tours" role="button" target="_blank">View</a></p>
 
-</footer>
+        </div> 
+        <div class="col-md-3 ltblue-background">
+          <p>Down East Cyclists</p>
+          <p>Graphic Design/Branding/Web Maintenance</p>
+               <p><a class="btn btn-lg btn-custom" href="https://www.behance.net/gallery/53584859/Down-East-Cyclists" role="button" target="_blank">View</a></p>
+      </div>
+    </div>
+    <!--Row5-->
+    <div class="row marketing ltgray-background">
+    <div class="col-md-2">
+        <p><a href="https://github.com/enmckinn"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p> 
+         </div>
+    <div class="col-md-2">
+        <p><a href="https://codepen.io/enmckinn/"target="_blank"><i class="fa fa-codepen fa-2x" aria-hidden="true"></i></a>
+        </p></div>
+        
+        <div class="col-md-2">
+            <p><a href="https://www.linkedin.com/in/mckinneyerin/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        </p></div>
+        
+        <div class="col-md-2">
+            <p><a href ="https://medium.com/@enmckinn" target="_blank"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+        </p></div>
+        
+        <div class="col-md-2">
+            <p><a href ="https://twitter.com/enmckinn" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        </p></div>
+        
+        <div class="col-md-2">
+            <p><a href ="https://dribbble.com/enmckinn" target="_blank"><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i></a>
+        </p></div>
+    
+    
+      <footer class="footer">
+      </footer>
+
+    </div> <!-- /container -->
 
 
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
-	<script src="js/vendor/jquery.js"></script>
-
-    </body>
+  </body>
 </html>
