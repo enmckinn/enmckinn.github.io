@@ -1,20 +1,25 @@
 body {
   font-family: 'Raleway', sans-serif;
   background: 
-    linear-gradient( 90deg, 
-      #777 0%,
-      #555 25%,
-      #666 50%, 
-      #555 75%,
-      #777 100%);
-  background-size: 9em 1em;
-  background-color: #ffffff;
+    linear-gradient(45deg, #69b7eb, #b3dbd3, #f4d6db);
   background-blend-mode: multiply, normal;
 
 }
 
 .navbar-brand {
   font-family:"Dancing Script", cursive;
+    background-color: white;
+}
+.navbar {
+    background-color: white;
+    height: 75px;
+}
+.navbar-brand {
+    margin: 0;
+  padding: 0;
+}
+.navbar-right li{
+    display:inline-block
 }
 h1{
   font-family: "Dancing Script",cursive;
@@ -24,10 +29,12 @@ h1{
 }
 h2,
 h3{
-    font-family: "Dancing Script",cursive;
-  text-shadow: 2px 2px 8px #999;
+    font-family: "Allura",cursive;
     font-size: 3em;
     text-align: center;
+}
+.lead {
+    font-size: 2em;
 }
 .about{
     background-color: white;
@@ -41,8 +48,12 @@ h3{
   font-family: "Rock Salt", cursive;
   font-size: 1.25em;
 }
-.jumbotron {
-  background-color: rgba(255, 255, 255, .95);
+.jumbotron p{
+    float:right;
+    text-align: right;
+    position:absolute;
+    top: 200px;
+}
 }
 
 .ltblue-background {
