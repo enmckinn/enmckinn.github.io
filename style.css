@@ -1,9 +1,13 @@
 body {
   font-family: 'Raleway', sans-serif;
   background: 
-    linear-gradient(45deg, #69b7eb, #b3dbd3, #f4d6db, #b3dbd3, #f4d6db);
+    linear-gradient(to bottom,
+  #b1726b,
+  #b1726b 50%,
+  #64bee0 50%,
+  #64bee0);
   background-blend-mode: multiply, normal;
-    
+background-size: 100% 50px;    
 }
 
 .navbar-brand {
@@ -35,14 +39,21 @@ h3{
     font-family: "Crushed", cursive;
     text-align: center;
 }
-.unicorn {
-   
+.logo {
+   width: 10vw;
+    padding-top: 50px;
 }
 .lead {
     font-size: 1.5em;
 }
+.skills {
+    margin-top: 50px;
+        background-color:ghostwhite;
+}
 .container {
     width: 95vw;
+    background-color: white;
+
 }
 #about{
     text-align: center;
@@ -56,8 +67,13 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 .left {
     text-align: left;
 }
+.right{
+    text-align: right;
+    float:right;
+    padding-top: 50px;
+}
 #portfolio {
-    background-color:aliceblue;
+    background-color:whitesmoke;
     margin-top: 20px;
     padding: 25px 5px;
     background-repeat: no-repeat;
