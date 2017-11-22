@@ -140,5 +140,8 @@ margin: 10px;
   align-items: stretch;
 }
 
-
+.carousel-caption {
+    color:darkgray;
+    padding-top: 25px;
+}
  
