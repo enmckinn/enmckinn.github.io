@@ -51,7 +51,7 @@ h3{
 .container {
     width: 95vw;
     background-color: white;
-    align-content: center;
+    margin: auto;
 
 }
 #about{
@@ -61,8 +61,10 @@ h3{
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
+display; flex;
+    margin: auto;
 }
+
 .card {
     margin: auto;
 }
