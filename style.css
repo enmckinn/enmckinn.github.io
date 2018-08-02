@@ -1,10 +1,9 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background: #655;
+  
   background-image:
-    radial-gradient(tan 20%, transparent 0), 
-    radial-gradient(tan 20%, transparent 0);
-  background-size: 30px 30px;
+    url(images/hedgehogbg.png);
+  background-size: 300px 300px;
   background-position: 0 0, 15px 15px;
 }
 
