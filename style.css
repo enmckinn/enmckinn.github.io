@@ -72,11 +72,15 @@ display; flex;
 }
 .left {
     text-align: left;
+  padding-top: 50px;
+  float: left;
+  clear: all;
 }
 .right{
     text-align: right;
     float:right;
     padding-top: 50px;
+  clear: all;
 }
 #portfolio {
     background-color:whitesmoke;
