@@ -24,14 +24,14 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(241,29,253,1) 50%
     width: 100%;
 }
 h1{
-  font-family: "Nova Mono", monospace;
+  font-family: "Titillium Web", monospace;
   margin-top: 75px;
   text-shadow: 2px 2px 8px #CC908F;
   display: none;
 }
 h2,
 h3{
-    font-family: "Nova Mono", monospace;
+    font-family: "Titillium Web", monospace;
     text-align: center;
 }
 .logo {
