@@ -26,14 +26,14 @@ body {
     width: 100%;
 }
 h1{
-  font-family: "Crushed",cursive;
+  font-family: "Nova Mono",cursive;
   margin-top: 75px;
   text-shadow: 2px 2px 8px #CC908F;
   display: none;
 }
 h2,
 h3{
-    font-family: "Crushed", cursive;
+    font-family: "Nova Mono", cursive;
     text-align: center;
 }
 .logo {
