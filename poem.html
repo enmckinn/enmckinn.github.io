@@ -20,7 +20,18 @@
       async function getTrumpHeadlines(numWords = 6) {
   try {
     const apiKey = 'your_nyt_api_key_here'; // Replace with your NYT API key
-    const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=donald+trump&sort=newest&api-key=yJsibnAmjdY1YyEbACw4LK4kCmUZ72uT`;
+    const today = new Date();
+    const thirtyDaysAgo = new Date(today);
+    thirtyDaysAgo.setDate(today.getDate() - 30);
+
+    // Format dates as YYYYMMDD
+    const formatDate = (date) =>
+      `${date.getFullYear()}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getDate()).padStart(2, '0')}`;
+
+    const beginDate = formatDate(thirtyDaysAgo);
+    const endDate = formatDate(today);
+
+    const url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=donald+trump&begin_date=${beginDate}&end_date=${endDate}&sort=newest&api-key=${apiKey}`;
 
     const response = await fetch(url);
     const data = await response.json();
@@ -30,11 +41,18 @@
 
       for (const headline of headlines) {
         const words = headline.split(/\W+/).filter(word => word.length > 0);
+        
         if (words.length >= numWords) {
           const startIndex = Math.floor(Math.random() * (words.length - numWords + 1));
-          return words.slice(startIndex, startIndex + numWords);
+          const selectedWords = words.slice(startIndex, startIndex + numWords);
+
+          // Ensure either "donald" or "trump" is in the selection
+          if (selectedWords.includes("donald") || selectedWords.includes("trump")) {
+            return selectedWords;
+          }
         }
       }
+
       return ["trump", "news", "headline", "error"];
     } else {
       console.error("Error fetching NYT headlines:", data);
@@ -45,8 +63,6 @@
     return ["trump", "news", "headline", "error"];
   }
 }
-
-
 
         function getGinsbergPhrase(maxWords = 6) {
             const ginsbergPhrases = [
