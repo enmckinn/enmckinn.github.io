@@ -17,10 +17,17 @@
     <script>
         let intervalID;
 
-       async function getNewsFromBackend() { try { const response = await fetch('/api/news'); 
-                                                  const data = await response.json(); console.log(data); } 
-       catch (error) { console.error('Error fetching data:', error); } } 
-        getNewsFromBackend();
+       async function getNewsFromBackend() {
+    try {
+        const response = await fetch('/api/news');
+        const data = await response.json();
+        return data.articles.map(article => article.title.split(/\W+/)).flat();
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return ["error", "fetching", "news"];
+    }
+}
+
 
         function getGinsbergPhrase(maxWords = 6) {
             const ginsbergPhrases = [
@@ -39,11 +46,12 @@
         }
 
         async function generateText() {
-            const headlineWords = await getNewsFromBackend();
-            const ginsbergPhrase = getGinsbergPhrase();
-            const lastLine = "BE COOL! Everything is going to work out well!";
-            return `${headlineWords.join(' ')}\n${ginsbergPhrase.join(' ')}\n${lastLine}`;
-        }
+    const headlineWords = await getNewsFromBackend();
+    const ginsbergPhrase = getGinsbergPhrase();
+    const lastLine = "BE COOL! Everything is going to work out well!";
+    return `${headlineWords.slice(0, 4).join(' ')}\n${ginsbergPhrase.join(' ')}\n${lastLine}`;
+}
+
 
         async function runGenerator() {
             const outputDiv = document.getElementById('output');
